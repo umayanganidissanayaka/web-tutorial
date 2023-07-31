@@ -1,0 +1,74 @@
+01
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Records</title>
+</head>
+<body>
+  <h1>Student Records</h1>
+  <table border="1">
+    <tr>
+      <th>Student ID</th>
+      <th>Student Name</th>
+      <th>Degree</th>
+    </tr>
+    <tr>
+      <td>1002323</td>
+      <td>Nimesh Fernando</td>
+      <td>BSc in IT</td>
+    </tr>
+    <tr>
+      <td>1002424</td>
+      <td>Lasadun Bandara</td>
+      <td>BSc in Computer Science</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+02
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming languages</title>
+</head>
+<body>
+  <h1>Programming languages</h1>
+  <ol>
+    <li>I. C</li>
+    <li>II. C#</li>
+    <li>III. C++</li>
+    <li>IV. JAVA</li>
+    <li>V. PYTHON</li>
+  </ol>
+</body>
+</html>
+
+03
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Information Form</title>
+</head>
+<body>
+  <h1>Student Information Form</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <label for="index">Index Number:</label>
+    <input type="text" id="index" name="index" required>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
+
+
