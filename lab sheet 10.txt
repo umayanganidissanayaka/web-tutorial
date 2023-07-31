@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Operations</title>
+</head>
+<body>
+  <button onclick="performMathOperations()">Perform Math Operations</button>
+
+  <script>
+    function performMathOperations() {
+      
+      const num1 = parseFloat(prompt("Enter the first number:"));
+      const num2 = parseFloat(prompt("Enter the second number:"));
+
+      
+      if (!isNaN(num1) && !isNaN(num2)) {
+        
+        const addition = num1 + num2;
+        const subtraction = num1 - num2;
+        const multiplication = num1 * num2;
+        const division = num1 / num2;
+
+       
+        alert(`Addition: ${addition}`);
+        alert(`Subtraction: ${subtraction}`);
+        alert(`Multiplication: ${multiplication}`);
+        alert(`Division: ${division}`);
+      } else {
+       
+        alert("Invalid input. Please enter valid numbers.");
+      }
+    }
+  </script>
+</body>
+</html>
+
+02 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extract Year of Birth from NIC Number</title>
+</head>
+<body>
+  <label>Enter NIC Number:</label>
+  <input type="text" id="nicNumber" />
+  <button onclick="displayYearOfBirth()">Get Year of Birth</button>
+
+  <script>
+    function displayYearOfBirth() {
+      const nicNumber = document.getElementById('nicNumber').value;
+
+      
+      if (nicNumber.length !== 10) {
+        alert("Invalid NIC number. Please enter a valid 10-digit NIC number.");
+        return;
+      }
+
+     
+      const yearOfBirth = nicNumber.slice(0, 4);
+
+     
+      alert(`Year of Birth: ${yearOfBirth}`);
+    }
+  </script>
+</body>
+</html>

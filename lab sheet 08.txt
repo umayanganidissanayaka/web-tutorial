@@ -1,0 +1,71 @@
+01 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Buttons</title>
+  <style>
+    
+    .color-button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <button class="color-button" id="redButton" onmouseover="changeBackgroundColor('red')" onmouseout="restoreBackgroundColor('red')">Red</button>
+  <button class="color-button" id="greenButton" onmouseover="changeBackgroundColor('green')" onmouseout="restoreBackgroundColor('green')">Green</button>
+  <button class="color-button" id="blueButton" onmouseover="changeBackgroundColor('blue')" onmouseout="restoreBackgroundColor('blue')">Blue</button>
+
+  <script>
+    function changeBackgroundColor(color) {
+      const button = document.getElementById(color + 'Button');
+      button.style.backgroundColor = color;
+    }
+
+    function restoreBackgroundColor(color) {
+      const button = document.getElementById(color + 'Button');
+      button.style.backgroundColor = '';
+    }
+  </script>
+</body>
+</html>
+
+
+02 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle Area Calculator</title>
+</head>
+<body>
+  <button onclick="calculateAreaUsingExactPi()">Calculate Area (Exact Pi)</button>
+  <button onclick="calculateAreaUsingApproximatePi()">Calculate Area (Approximate Pi)</button>
+
+  <script>
+    function calculateAreaUsingExactPi() {
+      const radius = parseFloat(prompt("Enter the radius of the circle:"));
+      if (!isNaN(radius)) {
+        const pi = 22 / 7;
+        const area = pi * radius * radius;
+        alert(`The area of the circle (using exact pi) is: ${area.toFixed(2)}`);
+      } else {
+        alert("Invalid input. Please enter a valid number.");
+      }
+    }
+
+    function calculateAreaUsingApproximatePi() {
+      const radius = parseFloat(prompt("Enter the radius of the circle:"));
+      if (!isNaN(radius)) {
+        const pi = 3.14159;
+        const area = pi * radius * radius;
+        alert(`The area of the circle (using approximate pi) is: ${area.toFixed(2)}`);
+      } else {
+        alert("Invalid input. Please enter a valid number.");
+      }
+    }
+  </script>
+</body>
+</html>

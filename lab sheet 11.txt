@@ -1,0 +1,147 @@
+01 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Operations in JavaScript</title>
+</head>
+<body>
+  <script>
+    
+    const x = 6;
+    const y = 4;
+  
+    const sum = x + y;
+    const difference = x - y;
+    const product = x * y;
+    const division = x / y;
+
+    alert(`Sum: ${sum}\nDifference: ${difference}\nProduct: ${product}\nDivision: ${division}`);
+  </script>
+</body>
+</html>
+
+02
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Count from 5 to 15 using PHP Loop</title>
+</head>
+<body>
+  <?php
+    // Using a for loop to display the count from 5 to 15
+    for ($i = 5; $i <= 15; $i++) {
+      echo $i . '<br>';
+    }
+  ?>
+</body>
+</html>
+
+03 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electricity Bill Calculator</title>
+</head>
+<body>
+  <form method="post">
+    <label>Enter the number of units consumed:</label>
+    <input type="number" name="units" required>
+    <input type="submit" value="Calculate Bill">
+  </form>
+
+  <?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $units = $_POST["units"];
+    $totalBill = 0;
+
+    if ($units > 0) {
+      if ($units <= 50) {
+        $totalBill = $units * 3.50;
+      } elseif ($units <= 100) {
+        $totalBill = (50 * 3.50) + (($units - 50) * 4.00);
+      } elseif ($units <= 150) {
+        $totalBill = (50 * 3.50) + (50 * 4.00) + (($units - 100) * 5.20);
+      } else {
+        $totalBill = (50 * 3.50) + (50 * 4.00) + (50 * 5.20) + (($units - 150) * 6.50);
+      }
+
+      echo "Total Bill: Rs. " . $totalBill;
+    } else {
+      echo "Invalid input. Please enter a valid number of units.";
+    }
+  }
+  ?>
+</body>
+</html>
+
+04
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day of the Week</title>
+</head>
+<body>
+  <form method="post">
+    <label>Enter a number (1 to 7):</label>
+    <input type="number" name="dayNumber" required min="1" max="7">
+    <input type="submit" value="Show Day of the Week">
+  </form>
+
+  <?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $dayNumber = $_POST["dayNumber"];
+
+    switch ($dayNumber) {
+      case 1:
+        echo "Monday";
+        break;
+      case 2:
+        echo "Tuesday";
+        break;
+      case 3:
+        echo "Wednesday";
+        break;
+      case 4:
+        echo "Thursday";
+        break;
+      case 5:
+        echo "Friday";
+        break;
+      case 6:
+        echo "Saturday";
+        break;
+      case 7:
+        echo "Sunday";
+        break;
+      default:
+        echo "Invalid number. Please enter a number between 1 and 7.";
+        break;
+    }
+  }
+  ?>
+</body>
+</html>
+
+05
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fruits Array</title>
+</head>
+<body>
+  <?php
+    // Create an array called 'fruits'
+    $fruits = array("Apple", "Banana", "Orange", "Mango", "Grapes");
+
+    // Use foreach loop to print each element of the array
+    foreach ($fruits as $fruit) {
+      echo $fruit . "<br>";
+    }
+  ?>
+</body>
+</html>
+
